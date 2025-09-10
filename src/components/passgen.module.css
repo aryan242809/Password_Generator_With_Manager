@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  letter-spacing: 1.6px;
+  font-size: 62.5%;
+  background-attachment: fixed;
+  background-image: linear-gradient(to right top, #b65fcf, #ba5acb, #be55c6, #c250c1, #c54bbc);
+}
+
+.maindiv {
+  width: 70%;
+  height: 40vh;
+  border-radius: 1rem;
+  background-color: #a5386059;;
+  box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.673);
+  position: fixed; /* relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: space-evenly;
+  animation-name: transi;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes transi {
+
+  0%
+  {
+    opacity: 0;
+  }
+
+  100%
+  {
+    opacity: 1;
+  }
+  
+}
+
+.heading {
+  text-align: center;
+  font-family: "Mozilla Headline", sans-serif;
+  letter-spacing: 1.6px;
+  word-spacing: 0.5rem;
+  font-size: 3rem;
+  font-weight: 1px;
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  border-radius: 1rem;
+}
+
+.textdiv {
+  border-radius: 1rem;
+  padding: 1rem 20rem;
+  background-image: linear-gradient(
+    to right top,
+    #000000,
+    #1e1d1d,
+    #363434,
+    #4f4d4d,
+    #6a6767
+  );
+  box-shadow: -5px -3px 10px black;
+  display: inline-block;
+}
+
+.inputtext {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+    font-family: "poppins", sans-serif;
+}
+
+.inbutton {
+  background-color: #005fd2;
+  padding: 1rem 1.5rem;
+  color: white;
+  border: none;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-family: "Mozilla Headline", sans-serif;
+  font-size: medium;
+  transition-duration: 0.5s;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+}
+
+.inbutton:hover {
+  background-color: #1520a6;
+}
+
+.inbutton:active {
+  padding: 1.5rem 2rem;
+}
+
+.numcheck {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-right: 1rem;
+  background-color: black;
+  color: white;
+}
+
+.numlable {
+  font-size: medium;
+  margin-right: 1rem;
+  font-family: "Mozilla Headline", sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+}
+
+.checkbox {
+  display: flex;
+}
+
+.lenghtlabel {
+  font-size: large;
+  margin-left: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+
+@media (max-width: 1200px) {
+  .maindiv {
+    width: 90%;
+    height: auto; /* allow it to expand naturally */
+    padding: 1.5rem;
+    grid-template-columns: 1fr; /* stack content */
+    align-content: center;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+    text-align: center;
+    word-spacing: normal;
+    margin-bottom: 5rem;
+  }
+
+  .textdiv {
+    padding: 1rem 2rem; /* reduce huge padding */
+    width: 100%; /* take full width */
+    box-sizing: border-box;
+  }
+
+  .inputtext {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .inbutton {
+    width: 30%;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    font-size: 1.4rem;
+  }
+
+  .checkbox {
+    flex-direction: column; /* stack options */
+    gap: 0.5rem;
+  }
+
+  .numlable,
+  .lenghtlabel {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .textdiv {
+    padding: 0.8rem 1rem;
+  }
+
+  .inbutton {
+    font-size: 1.2rem;
+  }
+}
