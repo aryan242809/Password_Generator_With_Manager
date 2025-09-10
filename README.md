@@ -19,8 +19,8 @@ CSS / TailwindCSS (or whichever you used)
 🚀 **Installation**
 
 Clone the repository
-git clone https://github.com/aryan242809/Movie_search_Web_Application.git
-cd password-generator-with-manager
+https://github.com/aryan242809/Password_Generator_With_Manager.git
+cd Password_Generator_With_Manager
 
 Install dependencies
 npm install
