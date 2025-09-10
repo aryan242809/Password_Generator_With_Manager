@@ -29,7 +29,7 @@ CSS / TailwindCSS (or whichever you used)
 
 Clone the repository
 
-git clone https://github.com/your-username/password-generator-with-manager.git
+git clone https://github.com/aryan242809/Password_Generator_With_Manager.git
 cd password-generator-with-manager
 
 Install dependencies
